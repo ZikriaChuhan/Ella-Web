@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ella</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css" integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <header class="flex flex-col gap-3 max-lg:gap-0">
+      <marquee class="marquee" behavior="loop" direction="left">
+        <div class="flex gap-32">
+          <p class="flex gap-2">
+            <img src="./image/electricIcon.png" width="18px" />
+            Summer sale: Up to 70% off selected items
+          </p>
+         
+        </div>
+      </marquee>
+
+      <div
+        class="flex justify-center flex-wrap max-lg:gap-3  items-end max-lg:hidden"
+      >
+        <div class="w-1/2">
+          <img src="./image/ella-logo.png" width="100px" />
+        </div>
+
+        <div class="header-detail flex flex-col justify-end text-left gap-3">
+          <div class="flex justify-center items-center gap-4">
+            <p class="cust-serv">Customer Service 091 234-ELLA</p>
+            <div class="dropdown">
+              <span class="flex justify-center items-center gap-2"
+                ><img src="./image/engIcon.png" width="20px" />EN
+              </span>
+              <div class="dropdown-content">
+                <span class="flex justify-center items-center gap-3"
+                  ><img src="./image/engIcon.png" width="22px" />EN
+                </span>
+                <span class="flex justify-center items-center gap-3"
+                  ><img src="./image/deIcon.png" width="22px" />DE
+                </span>
+              </div>
+            </div>
+            <div class="dropdown">
+              <span class="flex justify-center items-center gap-2"
+                ><img src="./image/USA-Icon.png" width="20px" />USD</span
+              >
+              <div class="dropdown-content">
+                <span class="flex justify-center items-center gap-3"
+                  ><img src="./image/USA-Icon.png" width="22px" />USD</span
+                >
+                <span class="flex justify-center items-center gap-3"
+                  ><img src="./image/EUR-Icon.png" width="22px" />EUR</span
+                >
+                <span class="flex justify-center items-center gap-3"
+                  ><img src="./image/engIcon.png" width="22px" />GBP</span
+                >
+              </div>
+            </div>
+
+            <div>
+              <div class="search-box">
+                <button class="btn-search">
+                  <i class="fas fa-search"></i>
+                </button>
+                <input
+                  type="text"
+                  class="input-search"
+                  placeholder="Type to Search..."
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="text-right">
+            <p class="free-ship-para uppercase cursor-pointer font-bold">
+              Free shipping on All Orders. No Minimum Purchase
+            </p>
+          </div> -->
+
+          <div class="flex justify-end gap-3">
+            <div
+              class="soping-card flex justify-center items-center gap-2 cursor-pointer"
+            >
+              <img
+                src="./image/basket.png"
+                alt="basket"
+                class="basket"
+                width="22px"
+              />
+              <p>Shopping cart</p>
+              <span>0</span>
+            </div>
+
+            <div class="flex justify-center items-center gap-2 cursor-pointer">
+              <img
+                src="./image/wishlishHeart.png"
+                class="wishlishHeart"
+                alt="basket"
+                width="20px"
+              />
+              <p>My wish list</p>
+            </div>
+
+            <div class="signORcreat flex justify-center items-center gap-2">
+              <p class="cursor-pointer">Sign in</p>
+              <span>/</span>
+              <p class="cursor-pointer">Create an account</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav>
+        <div
+          class="flex justify-center gap-5 max-lg:hidden bg-black text-white"
+        >
+          <div class="nav-links">
+            <ul class="flex flex-wrap gap-8">
+              <li><a href="#">Home</a></li>
+              <li>
+                <a href="#">SHOP</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Category 1</a></li>
+                  <li><a href="#">Category 2</a></li>
+                  <li><a href="#">Category 3</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">PRODUCT</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Category 1</a></li>
+                  <li><a href="#">Category 2</a></li>
+                  <li><a href="#">Category 3</a></li>
+                </ul>
+              </li>
+              <li><a href="#">BLOG</a></li>
+              <li>
+                <a href="#">New ARRIVAL</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Category 1</a></li>
+                  <li><a href="#">Category 2</a></li>
+                  <li><a href="#">Category 3</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">TREND</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Category 1</a></li>
+                  <li><a href="#">Category 2</a></li>
+                  <li><a href="#">Category 3</a></li>
+                </ul>
+              </li>
+              <li><a href="#">COLLECTIONS</a></li>
+              <li><a href="#">MAN</a></li>
+              <li><a href="#">WOMEN</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- mobile-navigation -->
+        <div class=" lg:hidden flex justify-between items-center px-3 py-3">
+          
+          <div class=" flex items-center gap-5">
+            <input type="checkbox" id="checkmobile" class="hidden">
+            <label for="checkmobile">
+              <i class="fa-solid fa-bars"></i>
+            </label>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <ul class="moblieNav-ul lg:hidden flex flex-col pl-5 pt-5 justify-center flex-wrap gap-8">
+              <label for="checkmobile" class=" absolute right-5 top-5">
+                <i class="fa-regular fa-circle-xmark fa-2xl"></i>
+              </label>
+          <li><a href="#">Home</a></li>
+          <li>
+            <a href="#">SHOP</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Category 1</a></li>
+              <li><a href="#">Category 2</a></li>
+              <li><a href="#">Category 3</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">PRODUCT</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Category 1</a></li>
+              <li><a href="#">Category 2</a></li>
+              <li><a href="#">Category 3</a></li>
+            </ul>
+          </li>
+          <li><a href="#">BLOG</a></li>
+          <li>
+            <a href="#">New ARRIVAL</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Category 1</a></li>
+              <li><a href="#">Category 2</a></li>
+              <li><a href="#">Category 3</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">TREND</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Category 1</a></li>
+              <li><a href="#">Category 2</a></li>
+              <li><a href="#">Category 3</a></li>
+            </ul>
+          </li>
+          <li><a href="#">COLLECTIONS</a></li>
+          <li><a href="#">MAN</a></li>
+          <li><a href="#">WOMEN</a></li>
+       
+        </ul>
+          </div>
+
+          <div>
+            <img src="./image/ella-logo.png" width="90px" />
+          </div>
+
+          <div class="items-center flex gap-5">
+            <i class="fa-solid fa-user"></i>
+            <img
+              src="./image/basket.png"
+              alt="basket"
+              class="basket"
+              width="22px"
+            />
+          </div>
+        </div>
+        <!-- mobile-navigation ul -->
+    
+        
+
+        <!-- mobile-navigation end -->
+      </nav>
+    </header>
+
+    <!-- SLIDER SECTION  -->
+    <section class="slider-Section">
+      <div class="slider-bg-img">
+        <img src="./image/slideshow-1.jpg" alt="slider1" width="100%" />
+      </div>
+
+      <div
+        class="slider-content gap-6 flex flex-col justify-center items-center"
+      >
+        <h3 class="flex flex-col items-center">
+          COSMOPOLIS
+          <div class="slider-content-div"></div>
+        </h3>
+
+        <p>
+          Quisquemos sodales suscipit tortor ditaemcos condimentum de cosmo
+          lacus meleifend menean diverra loremous.
+        </p>
+
+        <button>SHOP NOW</button>
+      </div>
+    </section>
+
+    <!-- feature product banner -->
+    <section>
+      <div
+        class="flex justify-center flex-wrap items-center gap-8 py-14 max-lg:gap-3 max-lg:py-5 max-lg:px-2"
+      >
+        <div class="feature-Img-Div">
+          <img src="./image/sub-banner-1.jpg" alt="" />
+          <h3 class=" ">EDITOR’S PICK</h3>
+        </div>
+        <div class="feature-Img-Div">
+          <img src="./image/sub-banner-2.jpg" alt="" />
+          <h3 class=" ">SHOES</h3>
+        </div>
+        <div class="feature-Img-Div">
+          <img src="./image/sub-banner-3.jpg" alt="" />
+          <h3 class=" ">ACCESSORIES</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- feature product cards -->
+
+    <section>
+      <div>
+        <div class="section-title flex justify-center items-center">
+          <h2>NEW ARRIVALS</h2>
+        </div>
+        <div class="section-title-div flex justify-center items-center">
+          <p class="section-title-div-para">View All</p>
+        </div>
+
+        <div
+          class="section-title-div flex-wrap flex py-8 justify-center max-lg:gap-8 gap-1 items-center"
+        >
+          <div class="product-Card">
+            <div class="product-Card_img-hover-div">
+              <div class="product-Card_Icon-hover">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-eye"></i>
+              </div>
+              <img src="./image/product-1.jpg" alt="" class="product-Card_img-hover" />
+              <div class="product-Card_btn-hover">
+               <button class="product-Card_btn-ho">QUICK ADD</button>
+              </div>
+            </div>
+            <h6>COLLETE</h6>
+            <p>
+              (Product 35) Sample - Clothing And Accessory Boutiques For Sale
+            </p>
+            <h5>From <span>$48.99</span></h5>
+            <div class="card-Img-selector flex">
+              <img src="./image/product-1.jpg" width="50px" alt="" />
+              <img src="./image/product-2.jpg" width="50px" alt="" />
+              <img src="./image/product-3.jpg" width="50px" alt="" />
+            </div>
+          </div>
+
+          <div class="product-Card">
+            <div class="product-Card_img-hover-div">
+              <div class="product-Card_Icon-hover">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-eye"></i>
+              </div>
+              <img src="./image/product-2.jpg" alt="" class="product-Card_img-hover" />
+              <div class="product-Card_btn-hover">
+               <button class="product-Card_btn-ho">QUICK ADD</button>
+              </div>
+            </div>
+            <h6>COLLETE</h6>
+            <p>
+              (Product 35) Sample - Clothing And Accessory Boutiques For Sale
+            </p>
+            <h5>From <span>$48.99</span></h5>
+            <div class="card-Img-selector flex">
+              <img src="./image/product-1.jpg" width="50px" alt="" />
+              <img src="./image/product-2.jpg" width="50px" alt="" />
+              <img src="./image/product-3.jpg" width="50px" alt="" />
+            </div>
+          </div>
+
+          <div class="product-Card">
+            <div class="product-Card_img-hover-div">
+              <div class="product-Card_Icon-hover">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-eye"></i>
+              </div>
+              <img src="./image/product-3.jpg" alt="" class="product-Card_img-hover" />
+              <div class="product-Card_btn-hover">
+               <button class="product-Card_btn-ho">QUICK ADD</button>
+              </div>
+            </div>
+            <h6>COLLETE</h6>
+            <p>
+              (Product 35) Sample - Clothing And Accessory Boutiques For Sale
+            </p>
+            <h5>From <span>$48.99</span></h5>
+            <div class="card-Img-selector flex justify-center gap-2">
+              <img src="./image/product-1.jpg" alt="" />
+              <img src="./image/product-2.jpg" alt="" />
+              <img src="./image/product-3.jpg" alt="" />
+            </div>
+          </div>
+
+          <div class="product-Card">
+            <div class="product-Card_img-hover-div">
+              <div class="product-Card_Icon-hover">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-eye"></i>
+              </div>
+              <img src="./image/product-4.jpg" alt="" class="product-Card_img-hover" />
+              <div class="product-Card_btn-hover">
+               <button class="product-Card_btn-ho">QUICK ADD</button>
+              </div>
+            </div>
+            <h6>COLLETE</h6>
+            <p>
+              (Product 35) Sample - Clothing And Accessory Boutiques For Sale
+            </p>
+            <h5>From <span>$48.99</span></h5>
+            <div class="card-Img-selector flex justify-center gap-2">
+              <img src="./image/product-1.jpg" alt="" />
+              <img src="./image/product-2.jpg" alt="" />
+              <img src="./image/product-3.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="section-title-div flex-wrap flex py-8 justify-center gap-1 items-center"
+        >
+          <div class="product-Card">
+            <div class="product-Card_img-hover-div">
+              <div class="product-Card_Icon-hover">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-eye"></i>
+              </div>
+              <img src="./image/product-4.jpg" alt="" class="product-Card_img-hover" />
+              <div class="product-Card_btn-hover">
+               <button class="product-Card_btn-ho">QUICK ADD</button>
+              </div>
+            </div>
+            <h6>COLLETE</h6>
+            <p>
+              (Product 35) Sample - Clothing And Accessory Boutiques For Sale
+            </p>
+            <h5>From <span>$48.99</span></h5>
+            <div class="card-Img-selector flex">
+              <img src="./image/product-1.jpg" width="50px" alt="" />
+              <img src="./image/product-2.jpg" width="50px" alt="" />
+              <img src="./image/product-3.jpg" width="50px" alt="" />
+            </div>
+          </div>
+
+          <div class="product-Card">
+            <div class="product-Card_img-hover-div">
+              <div class="product-Card_Icon-hover">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-eye"></i>
+              </div>
+              <img src="./image/product-3.jpg" alt="" class="product-Card_img-hover" />
+              <div class="product-Card_btn-hover">
+               <button class="product-Card_btn-ho">QUICK ADD</button>
+              </div>
+            </div>
+            <h6>COLLETE</h6>
+            <p>
+              (Product 35) Sample - Clothing And Accessory Boutiques For Sale
+            </p>
+            <h5>From <span>$48.99</span></h5>
+            <div class="card-Img-selector flex">
+              <img src="./image/product-1.jpg" width="50px" alt="" />
+              <img src="./image/product-2.jpg" width="50px" alt="" />
+              <img src="./image/product-3.jpg" width="50px" alt="" />
+            </div>
+          </div>
+
+          <div class="product-Card">
+            <div class="product-Card_img-hover-div">
+              <div class="product-Card_Icon-hover">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-eye"></i>
+              </div>
+              <img src="./image/product-2.jpg" alt="" class="product-Card_img-hover" />
+              <div class="product-Card_btn-hover">
+               <button class="product-Card_btn-ho">QUICK ADD</button>
+              </div>
+            </div>
+            <h6>COLLETE</h6>
+            <p>
+              (Product 35) Sample - Clothing And Accessory Boutiques For Sale
+            </p>
+            <h5>From <span>$48.99</span></h5>
+            <div class="card-Img-selector flex justify-center gap-2">
+              <img src="./image/product-1.jpg" alt="" />
+              <img src="./image/product-2.jpg" alt="" />
+              <img src="./image/product-3.jpg" alt="" />
+            </div>
+          </div>
+
+          <div class="product-Card">
+            <div class="product-Card_img-hover-div">
+              <div class="product-Card_Icon-hover">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-eye"></i>
+              </div>
+              <img src="./image/product-1.jpg" alt="" class="product-Card_img-hover" />
+              <div class="product-Card_btn-hover">
+               <button class="product-Card_btn-ho">QUICK ADD</button>
+              </div>
+            </div>
+            <h6>COLLETE</h6>
+            <p>
+              (Product 35) Sample - Clothing And Accessory Boutiques For Sale
+            </p>
+            <h5>From <span>$48.99</span></h5>
+            <div class="card-Img-selector flex justify-center gap-2">
+              <img src="./image/product-1.jpg" alt="" />
+              <img src="./image/product-2.jpg" alt="" />
+              <img src="./image/product-3.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slider-Section-two">
+      <div class="slider-bg-img-two">
+        <img src="./image/banner-1-compressor.jpg" alt="slider1" width="100%" />
+      </div>
+
+      <div
+        class="slider-content-two gap-6 flex flex-col justify-center items-center"
+      >
+        <h3 class="flex flex-col items-center">
+          Metropólis
+          <div class="slider-content-div-two"></div>
+        </h3>
+
+        <p>
+          Quisquemos sodales suscipit tortor ditaemcos condimentum de cosmo
+          lacus meleifend menean diverra loremous.
+        </p>
+
+        <button>SHOP NOW</button>
+      </div>
+    </section>
+
+    <!-- feature product cards -->
+
+    <section>
+      <div>
+        <div class="section-title flex justify-center pt-20 items-center">
+          <h2>Trending Now</h2>
+        </div>
+        <div class="section-title-div flex justify-center items-center">
+          <p class="section-title-div-para">View All</p>
+        </div>
+
+        <div
+          class="section-title-div flex-wrap flex py-8 justify-center max-lg:gap-8 gap-1 items-center"
+        >
+          <div class="product-Card">
+            <img src="./image/product-1.jpg" alt="" />
+            <h6>COLLETE</h6>
+            <p>
+              (Product 35) Sample - Clothing And Accessory Boutiques For Sale
+            </p>
+            <h5>From <span>$48.99</span></h5>
+            <div class="card-Img-selector flex">
+              <img src="./image/product-1.jpg" width="50px" alt="" />
+              <img src="./image/product-2.jpg" width="50px" alt="" />
+              <img src="./image/product-3.jpg" width="50px" alt="" />
+            </div>
+          </div>
+
+          <div class="product-Card">
+            <img src="./image/product-2.jpg" alt="" />
+            <h6>COLLETE</h6>
+            <p>
+              (Product 35) Sample - Clothing And Accessory Boutiques For Sale
+            </p>
+            <h5>From <span>$48.99</span></h5>
+            <div class="card-Img-selector flex">
+              <img src="./image/product-1.jpg" width="50px" alt="" />
+              <img src="./image/product-2.jpg" width="50px" alt="" />
+              <img src="./image/product-3.jpg" width="50px" alt="" />
+            </div>
+          </div>
+
+          <div class="product-Card">
+            <img src="./image/product-3.jpg" alt="" />
+            <h6>COLLETE</h6>
+            <p>
+              (Product 35) Sample - Clothing And Accessory Boutiques For Sale
+            </p>
+            <h5>From <span>$48.99</span></h5>
+            <div class="card-Img-selector flex justify-center gap-2">
+              <img src="./image/product-1.jpg" alt="" />
+              <img src="./image/product-2.jpg" alt="" />
+              <img src="./image/product-3.jpg" alt="" />
+            </div>
+          </div>
+
+          <div class="product-Card">
+            <img src="./image/product-4.jpg" alt="" />
+            <h6>COLLETE</h6>
+            <p>
+              (Product 35) Sample - Clothing And Accessory Boutiques For Sale
+            </p>
+            <h5>From <span>$48.99</span></h5>
+            <div class="card-Img-selector flex justify-center gap-2">
+              <img src="./image/product-1.jpg" alt="" />
+              <img src="./image/product-2.jpg" alt="" />
+              <img src="./image/product-3.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- feature product cards -->
+
+    <section class="border-b border-slate-300">
+      <div>
+        <div class="section-title flex justify-center pt-20 items-center">
+          <h2>Featured On Ella</h2>
+        </div>
+
+        <div
+          class="section-title-div flex-wrap flex py-8 justify-center max-lg:gap-8 gap-1 items-center"
+        >
+          <div class="feature-product-Card">
+            <div class="overflow-hidden">
+              <img src="./image/Featured-img-1.jpg" alt="" />
+            </div>
+            <h3>LOREM DE DORUS</h3>
+            <p>
+              Nullam aliquet vestibulum augue non varius. Cras cosmo congue an
+              melitos. Dui del ante le maliquam. Praesent murna de tellus
+              laoreet cosmopolis.
+            </p>
+            <button>SHOP NOW</button>
+          </div>
+
+          <div class="feature-product-Card">
+            <div class="overflow-hidden">
+              <img src="./image/Featured-img-2.jpg" alt="" />
+            </div>
+            <h3>LOREM DE DORUS</h3>
+            <p>
+              Nullam aliquet vestibulum augue non varius. Cras cosmo congue an
+              melitos. Dui del ante le maliquam. Praesent murna de tellus
+              laoreet cosmopolis.
+            </p>
+            <button>SHOP NOW</button>
+          </div>
+
+          <div class="feature-product-Card">
+            <div class="overflow-hidden">
+              <img src="./image/Featured-img-3.png" alt="" />
+            </div>
+            <h3>LOREM DE DORUS</h3>
+            <p>
+              Nullam aliquet vestibulum augue non varius. Cras cosmo congue an
+              melitos. Dui del ante le maliquam. Praesent murna de tellus
+              laoreet cosmopolis.
+            </p>
+            <button>SHOP NOW</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- partner section -->
+
+    <section class="carousel-Section py-14">
+      <div class="flex justify-center items-center relative gap-2 px-2">
+        <button class="carousel-btn prev-btn">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <div class="carousel-hid-control">
+          <div class="carousel-container flex gap-2">
+            <div class="carousel-slide">
+              <img src="./image/carousel-1.jpg" alt="Partner 1" />
+            </div>
+            <div class="carousel-slide">
+              <img src="./image/carousel-2.jpg" alt="Partner 2" />
+            </div>
+            <div class="carousel-slide">
+              <img src="./image/carousel-3.jpg" alt="Partner 3" />
+            </div>
+            <div class="carousel-slide">
+              <img src="./image/carousel-4.jpg" alt="Partner 4" />
+            </div>
+            <div class="carousel-slide">
+              <img src="./image/carousel-5.jpg" alt="Partner 5" />
+            </div>
+            <div class="carousel-slide">
+              <img src="./image/carousel-3.jpg" alt="Partner 6" />
+            </div>
+            <div class="carousel-slide">
+              <img src="./image/carousel-2.jpg" alt="Partner 7" />
+            </div>
+          </div>
+        </div>
+        <button class="carousel-btn next-btn">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- Insta gallary -->
+
+    <section class="flex flex-col gap-8 justify-center items-center pb-14 px-2">
+      <div
+        class="Insta-Heading-Div flex flex-col gap-2 justify-center items-center"
+      >
+        <h2><i class="fa-brands fa-instagram"></i> #ELLA ON INSTAGRAM</h2>
+        <p>Phasellus lorem malesuada ligula pulvinar commodo maecenas</p>
+      </div>
+      <div class="flex justify-center overflow-hidden items-center gap-2 ">
+        <button class="carousel-btn-2  swiper-btn-prev">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <div class=" swiper mySwiper ">
+          <div class="swiper-wrapper gap-2">
+            <div class="swiper-slide overflow-hidden">
+              <img src="./image/insta-1.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./image/insta-2.jpg" alt="" />
+            </div>
+            <div class=" swiper-slide">
+              <img src="./image/insta-3.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./image/insta-4.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./image/insta-5.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./image/insta-3.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./image/insta-2.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+
+        <button class="carousel-btn-2 swiper-btn-next">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+    </div>
+
+
+      <button class="insta-btn">View Gallery</button>
+    </section>
+
+    <!-- footer  -->
+
+    <footer class="section-p1">
+      <div class="col">
+        <img
+          class="logo"
+          src="./image/ella-logo-white.png"
+          width="200px"
+          alt=""
+        />
+       
+        <div class="follow">
+          <h4>Follow us</h4>
+          <div class="icon">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-pinterest-p"></i>
+            <i class="fab fa-youtube"></i>
+          </div>
+          
+        <p>Secured Payment Gateway</p>
+        <img src="./image/pay.png" alt="" />
+        </div>
+      </div>
+      <div class="col">
+        <h4>SHOP</h4>
+        <a href="#">New In</a>
+        <a href="#">Women</a>
+        <a href="#">Men</a>
+        <a href="#">Shoes</a>
+        <a href="#">Top Brands</a>
+      </div>
+      <div class="col">
+        <h4>Information</h4>
+        <a href="#">About</a>
+        <a href="#">Blog</a>
+        <a href="#">Orders and Returns</a>
+        <a href="#">Contact Us</a>
+        <a href="#">FAQs</a>
+      </div>
+      <div class="col">
+        <h4>Contact</h4>
+        <p><strong>Address:</strong> Washington DC, USA - 54840</p>
+        <p><strong>Phone:</strong> +1-234-5678910</p>
+        <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+        
+      </div>
+      <div class="col install">
+       
+      </div>
+      <div class="copyright">
+        <p>All Rights Reserved | &#169; 2024</p>
+      </div>
+    </footer>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ 
+  <script>
+
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      navigation: {
+        nextEl: ".swiper-btn-next",
+        prevEl: ".swiper-btn-prev",
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 0,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 0,
+        },
+        1024: {
+          slidesPerView: 5,
+          spaceBetween: 0,
+        },
+       
+      },
+    });
+  </script>
+  <script src="app.js"></script>
+</html>
